@@ -10,7 +10,7 @@
     color: #FA462F;
 }
 .nav-link{
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #000;
 }
 .nav-link:hover{
@@ -180,6 +180,7 @@
 }
 #reg-form .card{
     padding-bottom: 20px;
+    height: 100%;
 }
 /* Promo section */
 #promo{
@@ -301,4 +302,48 @@
 }
 #hero-section .hero-wrapper a{
     text-decoration: none;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    #promo .promo-wrapper h1{
+        font-size: 1.5rem;
+    }
+    #promo .promo-wrapper p{
+        font-size: 0.5rem;
+    }
+   
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #promo .promo-wrapper h1{
+        font-size: 1.5rem;
+    }
+    #promo .promo-wrapper p{
+        font-size: 0.5rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #promo .promo-wrapper h1{
+        font-size: 1.5rem;
+    }
+    #promo .promo-wrapper p{
+        font-size: 0.5rem;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #promo .promo-wrapper h1{
+        font-size: 2rem;
+    }
+    #promo .promo-wrapper p{
+        font-size: 1rem;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
