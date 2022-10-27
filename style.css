@@ -215,6 +215,157 @@
     height: 200px;
     object-fit: cover;
 }
+
+
+/* Pricing Card */
+#pricing-card{
+    background-color: #eee;
+    padding: 70px 0;
+}
+#pricing-card .price-table{
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .3s ease 0s;
+    
+}
+#pricing-card .price-table .price-title{
+    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+    padding: 40px 20px 145px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    color: #FFF;
+    overflow: hidden;
+}
+#pricing-card .price-table .price-title::before{
+    content: "";
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    bottom: -175px;
+    left: -46px;
+    background: #FFF;
+    border-radius: 80px;
+    transform: rotate(-85deg);
+}
+#pricing-card .price-table .price-title::after{
+    content: "";
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    top: 150px;
+    right: -70px;
+    bottom: auto;
+    left: auto;
+    background: #FFF;
+    border-radius: 100px;
+    transform: rotate(-40deg);
+}
+#pricing-card .price-table .price{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background: #FFF;
+    color: #404040;
+    display: inline-block;
+    padding: 35px 0;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 50%;
+    transform: translate(-50%);
+    transition: all .3s ease 0s;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .3);
+}
+#pricing-card .price-table:hover .price{
+    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+    color: #FFF;
+}
+#pricing-card .price-table .price .price-onetime{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+#pricing-card .price-table .price-content{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    text-align: left;
+    transition: all .3s ease 0s;
+}
+#pricing-card .price-table .price-content li {
+    padding: 7px 0 7px 80px;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#pricing-card .price-table .price-content li::before{
+    content: "\f00c";
+    height: 24px;
+    width: 24px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fb6ee5;
+    color: #fb6ee5;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 35px;
+    transform: translate(-50%);
+}
+#pricing-card .price-table .price-content li.price-disable{
+    color: #707070 !important;
+}
+#pricing-card .price-table .price-content li.price-disable::before{
+    content: "\f00d";
+    color: #707070;
+    border-color: #707070 !important;
+}
+#pricing-card .price-msge{
+    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+    position: relative;
+    padding: 10px 40px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    color: #404040;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+    z-index: 1;
+}
+#pricing-card .price-msge:hover{
+    color: #fff;
+}
+#pricing-card .price-msge::before{
+    content: "";
+    height: 92%;
+    width: 98%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: -1;
+}
+#pricing-card .price-msge:hover::before{
+    background: 0 0;
+}
+
 /* Promo section */
 #promo{
     height: 60vh;
