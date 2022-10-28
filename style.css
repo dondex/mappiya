@@ -17,7 +17,7 @@
 .nav-link:hover{
     color: #FA462F;
 }
-#header {
+/* #header {
     background-image: url(./image/bg-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -81,7 +81,160 @@
 #hero-section .btn-reg2:hover{
     background-color: #fff;
     color: rgb(45, 45, 240);
+} */
+
+#hero{
+    padding: 0;
+    position: relative; 
 }
+#hero .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 9%;
+    
+}
+#hero .slide-container .slide .content{
+    flex: 1 1 40rem;
+    animation: slideContent .5s linear 1s backwards;
+}
+@keyframes slideContent{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+
+#hero .slide-container .hero-image{
+    flex: 1 1 50rem;
+    padding-bottom: 15rem;
+    position: relative;
+    z-index: 0;
+}
+
+#hero .slide-container .hero-image .image-front{
+    /* transform: rotate(-35deg); */
+    position: absolute;
+    top: -85%;
+    left: 20%;
+    height: 700px;
+    animation: front .3s linear;
+}
+@keyframes front {
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+}
+
+#hero .slide-container .hero-image .image-cp{
+    position: absolute;
+    left: 35%;
+    height: 600px;
+}
+#hero .slide-container .hero-image .image-franchise{
+    position: absolute;
+    left: 10%;
+    width: 100%;
+    height: 500px;
+}
+#hero .slide-container .hero-image .text-front{
+    transform: rotate(-35deg);
+    position: absolute;
+    top: -10%;
+    left: -30%;
+    z-index: -1;
+    height: 250px;
+    animation: fronttext .5s linear .5s backwards;
+}
+@keyframes fronttext {
+    0%{
+        opacity: 0;
+        top: -10rem;
+    }
+}
+
+#hero .slide-container .slide .content span{
+    font-size: 2rem;
+    color: #FA462F;
+}
+#hero .slide-container .slide .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+#hero .slide-container .bg-slide3 .content h3{
+    font-size: 4.3rem;
+    color: #333;
+}
+#hero .slide-container .slide .content p{
+    font-size: 1.7rem;
+    color: #666;
+}
+#hero .slide-container .slide .content .hero-button{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: 2px solid #333;
+    font-size: 1rem;
+    color: #FA462F;
+    cursor: pointer;
+    background: #fff;
+    padding: .5rem 1rem;
+}
+#hero .slide-container .slide .content .hero-button:hover{
+    background: #FA462F;
+    color: #fff;
+}
+#hero .slide-container .bg-slide1{
+    background: url(./image/home-bg-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero .slide-container .bg-slide2{
+    background: url(./image/home-bg-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero .slide-container .bg-slide3{
+    background: url(./image/home-bg-3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero .slide-container{
+    display: none;
+}
+#hero .slide-container.active{
+    display: block;
+}
+.home #prev,
+.home #next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 100;
+    height: 3rem;
+    width: 3rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    color: #000;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-align: center;
+}
+.home #prev:hover,
+.home #next:hover{
+    color: #fff;
+    background: #FA462F;
+}
+.home #prev{
+    left: 3rem;
+}
+.home #next{
+    right: 3rem;
+}
+
 /* Mobile Section */
 #mobile-section{
     margin-top: 60px;
@@ -767,7 +920,7 @@
 
 
 /* CSS */
-#hero-section .button-87 {
+/* #hero-section .button-87 {
   margin: 0;
   padding: 10px 20px;
   text-align: center;
@@ -788,7 +941,7 @@
 
 #hero-section .button-87:hover {
   background-position: right center;
-  /* change the direction of the change here */
+  
   color: #fff;
   text-decoration: none;
 }
@@ -798,7 +951,7 @@
 }
 #hero-section .hero-wrapper a{
     text-decoration: none;
-}
+} */
 
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
