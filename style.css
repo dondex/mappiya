@@ -826,6 +826,10 @@
     margin-top: 50px;
 }
 
+.owl-dots{
+    display: none;
+}
+
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -841,7 +845,8 @@
     }
     #hero .slide-container .hero-image .text-front{
         height: 150px;
-        top: -40%;
+        top: -70%;
+        left: -10%;
     }
     #hero .slide-container .slide .content span{
         font-size: 1.5rem;
@@ -859,20 +864,157 @@
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    #hero .slide-container .hero-image .image-front{
+        height: 300px;
+        top: -40%;
+    }
+    #hero .slide-container .hero-image .image-cp{
+        top: -40%;
+    }
+    #hero .slide-container .hero-image .image-franchise{
+        top: -70%;
+    }
+    #hero .slide-container .hero-image .text-front{
+        height: 150px;
+        top: -70%;
+        left: -10%;
+    }
+    #hero .slide-container .slide .content span{
+        font-size: 1.5rem;
+    }
+    #hero .slide-container .slide .content h3{
+        font-size: 3rem;
+    }
+    #hero .slide-container .bg-slide3 .content h3{
+        font-size: 2.5rem;
+    }
+    #hero .slide-container .slide .content p{
+        font-size: 1.2rem;
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    
+    #hero .slide-container .hero-image .image-front{
+        height: 500px;
+        top: -50%;
+    }
+    #hero .slide-container .hero-image .image-cp{
+        top: -40%;
+    }
+    #hero .slide-container .hero-image .image-franchise{
+        top: -70%;
+    }
+    #hero .slide-container .hero-image .text-front{
+        height: 150px;
+        top: -40%;
+        left: -5%;
+    }
+    #hero .slide-container .slide .content span{
+        font-size: 1.7rem;
+    }
+    #hero .slide-container .slide .content h3{
+        font-size: 3.3rem;
+    }
+    #hero .slide-container .bg-slide3 .content h3{
+        font-size: 3rem;
+    }
+    #hero .slide-container .slide .content p{
+        font-size: 1.5rem;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    #hero .slide-container .hero-image .image-front{
+        height: 500px;
+        top: -50%;
+    }
+    #hero .slide-container .hero-image .image-cp{
+        top: -70%;
+    }
+    #hero .slide-container .hero-image .image-franchise{
+        top: -70%;
+    }
+    #hero .slide-container .hero-image .text-front{
+        height: 200px;
+        top: -40%;
+        left: -5%;
+    }
+    #hero .slide-container .slide .content span{
+        font-size: 2rem;
+    }
+    #hero .slide-container .slide .content h3{
+        font-size: 3.5rem;
+    }
+    #hero .slide-container .bg-slide3 .content h3{
+        font-size: 3.2rem;
+    }
+    #hero .slide-container .slide .content p{
+        font-size: 1.7rem;
+    }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    #hero .slide-container .hero-image .image-front{
+        height: 500px;
+        top: -85%;
+        left: 40%;
+    }
+    #hero .slide-container .hero-image .image-cp{
+        height: 500px;
+        left: 50%;
+    }
+    #hero .slide-container .hero-image .image-franchise{
+        height: 500px;
+        left: 20%;
+    }
+    #hero .slide-container .hero-image .text-front{
+        height: 230px;
+        top: -60%;
+        left: 5%;
+    }
+    #hero .slide-container .slide .content span{
+        font-size: 2rem;
+    }
+    #hero .slide-container .slide .content h3{
+        font-size: 5rem;
+    }
+    #hero .slide-container .bg-slide3 .content h3{
+        font-size: 4.3rem;
+    }
+    #hero .slide-container .slide .content p{
+        font-size: 1.7rem;
+    }
 }
-.owl-dots{
-    display: none;
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1300px) {
+    #hero .slide-container .hero-image .image-front{
+        height: 700px;
+        top: -85%;
+        left: 20%;
+    }
+    #hero .slide-container .hero-image .image-cp{
+        height: 600px;
+    }
+    #hero .slide-container .hero-image .image-franchise{
+        height: 500px;
+    }
+    #hero .slide-container .hero-image .text-front{
+        height: 250px;
+        top: -10%;
+        left: -30%;
+    }
+    #hero .slide-container .slide .content span{
+        font-size: 2rem;
+    }
+    #hero .slide-container .slide .content h3{
+        font-size: 5rem;
+    }
+    #hero .slide-container .bg-slide3 .content h3{
+        font-size: 4.3rem;
+    }
+    #hero .slide-container .slide .content p{
+        font-size: 1.7rem;
+    }
 }
