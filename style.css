@@ -151,12 +151,12 @@
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: 100;
-    height: 3rem;
-    width: 3rem;
-    line-height: 2.5rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 1.75rem;
     font-size: 1.5rem;
     color: #000;
-    border: 2px solid #000;
+    
     cursor: pointer;
     text-align: center;
 }
@@ -171,6 +171,20 @@
 .home #next{
     right: 3rem;
 }
+
+#hero-slide .carousel-inner .carousel-item1{
+    background-image: url('./image/home-bg-1.jpg');
+}
+#hero-slide .carousel-inner .carousel-item2{
+    background-image: url('./image/home-bg-2.jpg');
+}
+
+#hero-slide .carousel-inner .carousel-item3{
+    background-image: url('./image/home-bg-3.jpg');
+}
+
+
+  
 
 /* Mobile Section */
 #mobile-section{
@@ -865,6 +879,9 @@
     #hero .slide-container .slide .content p{
         font-size: 1.2rem;
     }
+    /* #btn-hide{
+        display: none;
+    } */
    
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
