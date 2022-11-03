@@ -833,6 +833,9 @@
 /* Media Queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .navbar{
+        max-width:max-content;
+    }
     #hero .slide-container .hero-image .image-front{
         height: 300px;
         top: -40%;
